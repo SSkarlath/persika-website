@@ -4,65 +4,71 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Persika — Marketing Agency in Dubai (Meydan Free Zone)</title>
-  <meta name="description" content="Marketing & branding agency in Dubai (Meydan Free Zone): performance, branding, videography, SMM, content, analytics." />
+  <meta name="description" content="Marketing & branding agency in Dubai (Meydan Free Zone): branding, SMM, videography, performance marketing and analytics for the UAE market." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
+    :root{--brand:#C2185B;--brand-600:#d61f69;--brand-700:#a1144a}
     html,body{font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji"}
-    .glass{backdrop-filter:saturate(180%) blur(16px); background:rgba(255,255,255,0.05);}
-    .shine{position:relative;overflow:hidden}
-    .shine:after{content:"";position:absolute;top:-100%;left:-50%;width:50%;height:300%;background:linear-gradient(120deg,rgba(255,255,255,0) 0%,rgba(255,255,255,.25) 50%,rgba(255,255,255,0) 100%);transform:rotate(15deg)}
-    .shine:hover:after{animation:shine 1.4s ease}
-    @keyframes shine{to{top:100%;left:120%}}
+    .btn-primary{background:var(--brand); color:#fff}
+    .btn-primary:hover{background:var(--brand-600)}
+    .link-underline{position:relative}
+    .link-underline:after{content:"";position:absolute;left:0;bottom:-6px;height:2px;width:0;background:var(--brand);transition:width .25s ease}
+    .link-underline:hover:after{width:100%}
+    .card{border:1px solid #eaeaea; border-radius:1rem; background:#fff; box-shadow:0 2px 16px rgba(0,0,0,.04)}
   </style>
 </head>
-<body class="bg-slate-950 text-white">
-  <!-- Navbar -->
-  <header class="fixed inset-x-0 top-0 z-50">
+<body class="bg-zinc-50 text-zinc-900">
+  <!-- Header -->
+  <header class="fixed inset-x-0 top-0 z-50 bg-white/80 backdrop-blur supports-[backdrop-filter]:bg-white/60 border-b border-zinc-200">
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
       <div class="flex items-center justify-between py-4">
-        <a href="#top" class="flex items-center gap-2">
-          <div class="h-8 w-8 rounded-xl bg-indigo-500"></div>
+        <a href="#top" class="flex items-center gap-3">
+          <img src="persika-logo.png" alt="Persika logo" class="h-8 w-8 object-contain"/>
           <span class="text-xl font-extrabold tracking-tight">Persika</span>
         </a>
-        <nav class="hidden md:flex items-center gap-8 text-sm text-slate-200">
-          <a href="#services" class="hover:text-white">Services</a>
-          <a href="#cases" class="hover:text-white">Case Studies</a>
-          <a href="#process" class="hover:text-white">Process</a>
-          <a href="#about" class="hover:text-white">About</a>
-          <a href="#contact" class="px-4 py-2 rounded-xl bg-indigo-500/90 hover:bg-indigo-400 text-white font-semibold shine">Contact</a>
+        <nav class="hidden md:flex items-center gap-8 text-sm">
+          <a href="#services" class="link-underline">Services</a>
+          <a href="#process" class="link-underline">Process</a>
+          <a href="#about" class="link-underline">About</a>
+          <a href="#contact" class="px-4 py-2 rounded-xl btn-primary font-semibold">Contact</a>
         </nav>
       </div>
     </div>
   </header>
 
   <!-- Hero -->
-  <section id="top" class="relative pt-32 pb-24 overflow-hidden">
+  <section id="top" class="relative pt-32 pb-20 overflow-hidden">
     <div class="absolute inset-0 -z-10">
-      <div class="absolute -top-32 left-1/2 -translate-x-1/2 h-[600px] w-[1200px] rounded-full blur-3xl opacity-30" style="background: radial-gradient(60% 60% at 50% 50%, #818cf8 0%, rgba(129,140,248,0) 70%);"></div>
+      <!-- subtle radial accent -->
+      <div class="absolute -top-40 left-1/2 -translate-x-1/2 h-[600px] w-[1200px] rounded-full blur-3xl opacity-30" style="background: radial-gradient(60% 60% at 50% 50%, rgba(194,24,91,.25) 0%, rgba(194,24,91,0) 70%);"></div>
     </div>
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 grid lg:grid-cols-12 gap-10 items-center">
-      <div class="lg:col-span-7">
-        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight">Growth you can measure</h1>
-        <p class="mt-6 text-lg text-slate-300 max-w-2xl">Persika — a Dubai-based marketing agency in Meydan Free Zone. We combine strategy, branding, performance and content to scale your business across the UAE and MENA region.</p>
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 grid lg:grid-cols-12 gap-12 items-center">
+      <div class="lg:col-span-6">
+        <div class="flex items-center gap-3 mb-6">
+          <img src="persika-logo.png" alt="Persika logo" class="h-12 w-12 object-contain"/>
+          <span class="text-sm font-medium text-zinc-600">Dubai • Meydan Free Zone</span>
+        </div>
+        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight">Brands and growth for the UAE market</h1>
+        <p class="mt-6 text-lg text-zinc-600 max-w-2xl">We combine branding, performance and content to launch, scale and differentiate your business in the UAE and wider MENA region.</p>
         <div class="mt-8 flex items-center gap-4">
-          <a href="#contact" class="px-6 py-3 rounded-2xl bg-indigo-500 hover:bg-indigo-400 font-semibold shine">Book a Call</a>
-          <a href="#services" class="px-6 py-3 rounded-2xl border border-white/10 hover:border-white/20">Explore Services</a>
+          <a href="#contact" class="px-6 py-3 rounded-2xl btn-primary font-semibold">Book a consultation</a>
+          <a href="#services" class="px-6 py-3 rounded-2xl border border-zinc-300 bg-white hover:border-zinc-400">Explore services</a>
         </div>
       </div>
-      <div class="lg:col-span-5">
-        <div class="glass rounded-3xl border border-white/10 p-6">
-          <div class="text-sm text-slate-300">Free Audit</div>
-          <h3 class="mt-1 text-2xl font-bold">Marketing Audit for UAE Market</h3>
-          <p class="mt-3 text-slate-400">We’ll prepare a 90-day action plan for your business.</p>
+      <div class="lg:col-span-6">
+        <div class="card p-6">
+          <div class="text-sm text-zinc-600">Free Audit</div>
+          <h3 class="mt-1 text-2xl font-bold">UAE Market Audit</h3>
+          <p class="mt-3 text-zinc-600">Get a tailored 90‑day plan to grow in the UAE.</p>
           <form class="mt-6 grid gap-4" onsubmit="event.preventDefault(); alert('Thank you! We will contact you shortly.');">
-            <input required placeholder="Name" class="w-full rounded-xl bg-white/5 border border-white/10 px-4 py-3 outline-none focus:ring-2 focus:ring-indigo-500" />
-            <input required type="email" placeholder="Email" class="w-full rounded-xl bg-white/5 border border-white/10 px-4 py-3 outline-none focus:ring-2 focus:ring-indigo-500" />
-            <input placeholder="Website / Project" class="w-full rounded-xl bg-white/5 border border-white/10 px-4 py-3 outline-none focus:ring-2 focus:ring-indigo-500" />
-            <button class="rounded-xl px-5 py-3 bg-indigo-500 hover:bg-indigo-400 font-semibold">Get Audit</button>
-            <p class="text-xs text-slate-400">By submitting you agree to our privacy policy.</p>
+            <input required placeholder="Name" class="w-full rounded-xl bg-white border border-zinc-300 px-4 py-3 outline-none focus:ring-2 focus:ring-[var(--brand)]" />
+            <input required type="email" placeholder="Email" class="w-full rounded-xl bg-white border border-zinc-300 px-4 py-3 outline-none focus:ring-2 focus:ring-[var(--brand)]" />
+            <input placeholder="Website / Project" class="w-full rounded-xl bg-white border border-zinc-300 px-4 py-3 outline-none focus:ring-2 focus:ring-[var(--brand)]" />
+            <button class="rounded-xl px-5 py-3 btn-primary font-semibold">Get Audit</button>
+            <p class="text-xs text-zinc-500">By submitting you agree to our privacy policy.</p>
           </form>
         </div>
       </div>
@@ -73,78 +79,75 @@
   <section id="services" class="py-20">
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
       <h2 class="text-3xl sm:text-4xl font-extrabold">What We Do</h2>
-      <p class="mt-3 text-slate-300 max-w-2xl">Data‑driven approach, transparency, weekly reports and rapid experimentation.</p>
+      <p class="mt-3 text-zinc-600 max-w-2xl">Premium, minimal design language paired with experimentation and data.</p>
       <div class="mt-10 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        <div class="glass rounded-2xl border border-white/10 p-6">
-          <h3 class="text-xl font-bold">Performance Marketing</h3>
-          <p class="mt-2 text-slate-400">Meta, Google, TikTok, LinkedIn for UAE. English/Arabic creatives, lead gen and e‑commerce.</p>
+        <div class="card p-6">
+          <h3 class="text-xl font-bold">Branding & Creative</h3>
+          <p class="mt-2 text-zinc-600">Naming, identity, brand systems and guidelines tailored for the UAE.</p>
         </div>
-        <div class="glass rounded-2xl border border-white/10 p-6">
-          <h3 class="text-xl font-bold">Branding</h3>
-          <p class="mt-2 text-slate-400">Naming, identity, brand guidelines, tone of voice and brand systems tailored for UAE.</p>
-        </div>
-        <div class="glass rounded-2xl border border-white/10 p-6">
-          <h3 class="text-xl font-bold">Videography</h3>
-          <p class="mt-2 text-slate-400">Video production in Dubai: ads, interviews, UGC, vertical Reels/TikTok content.</p>
-        </div>
-        <div class="glass rounded-2xl border border-white/10 p-6">
+        <div class="card p-6">
           <h3 class="text-xl font-bold">SMM & Content</h3>
-          <p class="mt-2 text-slate-400">Instagram, TikTok, LinkedIn: content planning, production and community management.</p>
+          <p class="mt-2 text-zinc-600">Instagram, TikTok, LinkedIn — content planning, production and community.</p>
         </div>
-        <div class="glass rounded-2xl border border-white/10 p-6">
-          <h3 class="text-xl font-bold">SEO & Content</h3>
-          <p class="mt-2 text-slate-400">Technical SEO, EN/AR keyword research, content strategy and publishing.</p>
+        <div class="card p-6">
+          <h3 class="text-xl font-bold">Videography</h3>
+          <p class="mt-2 text-zinc-600">Dubai-based production: ads, interviews, UGC and vertical content.</p>
         </div>
-        <div class="glass rounded-2xl border border-white/10 p-6">
+        <div class="card p-6">
+          <h3 class="text-xl font-bold">Performance Marketing</h3>
+          <p class="mt-2 text-zinc-600">Meta, Google, TikTok, LinkedIn for UAE. EN/AR creatives, lead gen, e‑commerce.</p>
+        </div>
+        <div class="card p-6">
+          <h3 class="text-xl font-bold">SEO</h3>
+          <p class="mt-2 text-zinc-600">Technical SEO, EN/AR keyword research, on‑site and content strategy.</p>
+        </div>
+        <div class="card p-6">
           <h3 class="text-xl font-bold">Analytics</h3>
-          <p class="mt-2 text-slate-400">GA4, GTM, BI dashboards, attribution, CAC/LTV and full funnel analytics.</p>
+          <p class="mt-2 text-zinc-600">GA4, GTM, BI dashboards, attribution, CAC/LTV and full‑funnel analytics.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Case Studies -->
-  
-
   <!-- Process -->
-  <section id="process" class="py-20">
+  <section id="process" class="py-20 bg-white border-y border-zinc-200">
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
       <h2 class="text-3xl sm:text-4xl font-extrabold">How We Work</h2>
       <div class="mt-10 grid md:grid-cols-4 gap-6">
-        <div class="glass rounded-2xl p-6 border border-white/10">
-          <div class="text-4xl font-extrabold">01</div>
+        <div class="card p-6">
+          <div class="text-4xl font-extrabold text-[var(--brand)]">01</div>
           <h3 class="mt-2 font-bold">Audit & Goals</h3>
-          <p class="mt-2 text-slate-400">Understanding your market, audience and unit economics.</p>
+          <p class="mt-2 text-zinc-600">Market, audience and unit economics.</p>
         </div>
-        <div class="glass rounded-2xl p-6 border border-white/10">
-          <div class="text-4xl font-extrabold">02</div>
+        <div class="card p-6">
+          <div class="text-4xl font-extrabold text-[var(--brand)]">02</div>
           <h3 class="mt-2 font-bold">Strategy</h3>
-          <p class="mt-2 text-slate-400">Media plan, hypothesis backlog, KPIs and roadmap.</p>
+          <p class="mt-2 text-zinc-600">Media plan, hypotheses, KPIs and roadmap.</p>
         </div>
-        <div class="glass rounded-2xl p-6 border border-white/10">
-          <div class="text-4xl font-extrabold">03</div>
+        <div class="card p-6">
+          <div class="text-4xl font-extrabold text-[var(--brand)]">03</div>
           <h3 class="mt-2 font-bold">Launch</h3>
-          <p class="gmt-2 text-slate-400">Creatives, landing pages, tracking and reporting.</p>
+          <p class="mt-2 text-zinc-600">Creatives, landing pages, tracking and reporting.</p>
         </div>
-        <div class="glass rounded-2xl p-6 border border-white/10">
-          <div class="text-4xl font-extrabold">04</div>
+        <div class="card p-6">
+          <div class="text-4xl font-extrabold text-[var(--brand)]">04</div>
           <h3 class="mt-2 font-bold">Scale</h3>
-          <p class="mt-2 text-slate-400">Optimisation and expansion of channels based on data.</p>
+          <p class="mt-2 text-zinc-600">Optimisation and channel expansion.</p>
         </div>
       </div>
     </div>
   </section>
 
   <!-- About -->
-  <section id="about" class="py-20 border-t border-white/10">
+  <section id="about" class="py-20">
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 grid md:grid-cols-2 gap-10 items-start">
       <div>
         <h2 class="text-3xl sm:text-4xl font-extrabold">Who We Are</h2>
-        <p class="mt-4 text-slate-300">We are a team of marketers, brand designers, videographers and analysts based in Dubai (Meydan Free Zone). We work transparently: goals, hypothesis backlog, clear reporting and weekly syncs. We act as an extension of your team and help you adapt to the UAE market.</p>
+        <p class="mt-4 text-zinc-700">We are a team of marketers, brand designers, videographers and analysts based in Dubai (Meydan Free Zone). We work transparently with clear goals, a hypothesis backlog and weekly syncs as an extension of your team.</p>
       </div>
-      <div class="glass rounded-2xl border border-white/10 p-6">
+      <div class="card p-6">
         <h3 class="text-xl font-bold">Tech Stack</h3>
-        <ul class="mt-3 space-y-2 text-slate-300 list-disc list-inside">
+        <ul class="mt-3 space-y-2 text-zinc-700 list-disc list-inside">
           <li>GA4, GTM, BigQuery, Looker/Power BI</li>
           <li>Meta Ads, Google Ads, TikTok, LinkedIn</li>
           <li>Hotjar, Optimizely, PostHog, Amplitude</li>
@@ -154,24 +157,24 @@
   </section>
 
   <!-- Contact -->
-  <section id="contact" class="py-20">
+  <section id="contact" class="py-20 bg-white border-t border-zinc-200">
     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-      <div class="glass rounded-3xl border border-white/10 p-10">
+      <div class="card p-10">
         <div class="grid md:grid-cols-2 gap-8 items-center">
           <div>
-            <h2 class="text-3xl sm:text-4xl font-extrabold">Ready to Grow in the UAE?</h2>
-            <p class="mt-3 text-slate-300">Leave your details — we’ll send you a 90‑day plan tailored to your goals.</p>
-            <ul class="mt-6 text-slate-300 space-y-2">
-              <li>✉️ <a class="underline decoration-white/20 hover:decoration-white" href="mailto:hello@persika.ae">hello@persika.ae</a></li>
-              <li>📞 <a class="underline decoration-white/20 hover:decoration-white" href="tel:+971500000000">+971 50 000 0000</a></li>
+            <h2 class="text-3xl sm:text-4xl font-extrabold">Ready to grow in the UAE?</h2>
+            <p class="mt-3 text-zinc-700">Leave your details — we’ll send you a 90‑day plan tailored to your goals.</p>
+            <ul class="mt-6 text-zinc-700 space-y-2">
+              <li>✉️ <a class="underline decoration-[var(--brand)]/30 hover:decoration-[var(--brand)]" href="mailto:hello@persika.ae">hello@persika.ae</a></li>
+              <li>📞 <a class="underline decoration-[var(--brand)]/30 hover:decoration-[var(--brand)]" href="tel:+971500000000">+971 50 000 0000</a></li>
               <li>📍 Dubai, Meydan Free Zone</li>
             </ul>
           </div>
           <form class="grid gap-4" onsubmit="event.preventDefault(); alert('Thank you! We will contact you shortly.');">
-            <input required placeholder="Your name" class="w-full rounded-xl bg-white/5 border border-white/10 px-4 py-3 outline-none focus:ring-2 focus:ring-indigo-500" />
-            <input required type="email" placeholder="Email" class="w-full rounded-xl bg-white/5 border border-white/10 px-4 py-3 outline-none focus:ring-2 focus:ring-indigo-500" />
-            <textarea rows="4" placeholder="Tell us about your project" class="w-full rounded-xl bg-white/5 border border-white/10 px-4 py-3 outline-none focus:ring-2 focus:ring-indigo-500"></textarea>
-            <button class="rounded-xl px-5 py-3 bg-indigo-500 hover:bg-indigo-400 font-semibold shine">Send</button>
+            <input required placeholder="Your name" class="w-full rounded-xl bg-white border border-zinc-300 px-4 py-3 outline-none focus:ring-2 focus:ring-[var(--brand)]" />
+            <input required type="email" placeholder="Email" class="w-full rounded-xl bg-white border border-zinc-300 px-4 py-3 outline-none focus:ring-2 focus:ring-[var(--brand)]" />
+            <textarea rows="4" placeholder="Tell us about your project" class="w-full rounded-xl bg-white border border-zinc-300 px-4 py-3 outline-none focus:ring-2 focus:ring-[var(--brand)]"></textarea>
+            <button class="rounded-xl px-5 py-3 btn-primary font-semibold">Send</button>
           </form>
         </div>
       </div>
@@ -179,12 +182,12 @@
   </section>
 
   <!-- Footer -->
-  <footer class="py-10 border-t border-white/10">
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-slate-400">
+  <footer class="py-10 border-t border-zinc-200 bg-white">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-zinc-600">
       <div>© <span id="y"></span> Persika</div>
       <div class="flex items-center gap-6">
-        <a href="#" class="hover:text-slate-200">Privacy Policy</a>
-        <a href="#top" class="hover:text-slate-200">Back to top ↑</a>
+        <a href="#" class="link-underline">Privacy Policy</a>
+        <a href="#top" class="link-underline">Back to top ↑</a>
       </div>
     </div>
   </footer>
@@ -192,3 +195,4 @@
   <script>document.getElementById('y').textContent = new Date().getFullYear()</script>
 </body>
 </html>
+
